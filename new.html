@@ -1,0 +1,12 @@
+ $q1 = "an SQL query";
+  $q2 = "another SQL query";
+  ...
+  $qn = "the nth SQL query";
+  .
+  .
+  .
+  for ($i = 1; $i < 9; $i++) {
+	$qi = "q$i";
+	$q = $$qi;
+	query($q);
+  }
